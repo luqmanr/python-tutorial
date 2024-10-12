@@ -22,7 +22,7 @@ for <VARIABLE> in range(<INSERT NUMBER HERE>):
     # DO SOMETHING HERE
 ```
 
-3. Create sebuah script `sum.py` yang berisikan variable `a`, `b`, & `c` dimana `c = a + b`. Kemudian print value dari variable `a,b,c`
+3.a. Create sebuah script `sum.py` yang berisikan variable `a`, `b`, & `c` dimana `c = a + b`. Kemudian print value dari variable `a,b,c`
 ```bash
 $ python3 sum.py
 > a = 5
@@ -39,6 +39,34 @@ print("b = ", b) # print 2 parameter sekaligus
 print("c = ", c) # print 2 parameter sekaligus
 ```
 
+3.b. Create sebuah script `loop2.py` berisikan sebuah loop 5 kali iterasi, yang akan menambahkan bilangan antara `a & b`, dimana `a` akan bertambah `1` di setiap iterasi loop
+```bash
+$ python3 loop2.py
+> eg. b = 4
+> c = 4
+> c = 5
+> c = 6
+> c = 7
+> ...
+```
+
+3.c. Create sebuah script `loop3.py`, yang berisikan sebuah 5xloop di dalam 5xloop, dimana di **LOOP PERTAMA** `a` akan bertambah `1`, di dalam **LOOP KEDUA** `b` akan bertambah `1`. Setiap iterasi loop akan menambahkan antara bilangan `a & b`
+```bash
+$ python3 loop3.py
+> c = 0
+> c = 1
+> c = 2
+> c = 3
+> c = 4
+> c = 1
+> c = 2
+> c = 3
+> c = 4
+> c = 5
+> ...
+> c = 8
+```
+
 4. Create sebuah script bernama `hello.py` berisikan function bernama `hello_world()`, yang akan print `HELLO WORLD`
 ```bash
 $ python3 hello.py 
@@ -46,13 +74,38 @@ $ python3 hello.py
 ```
 HINT:
 ```
-def <BLANK>:
+def <FUNCTION NAME>:
     # DO SOMETHING HERE
 ```
 
-5. Create sebuah script bernama `bool.py` yang mengecek apakah sebuah bilangan merupakan bilangan ganjil atau genap
+4.b. Create script `nambah.py`, yang ada definisi function `tambah(a, b)`. Dimana `a & b` adalah sebuah bilangan. Kemudian kembalikan hasil `a + b` dari fungsi tersebut
+```bash
+$ python3 nambah.py
+> eg. a = 20 , b = 10
+> c = 30
+```
+HINT:
+```
+def nambah(a, b):
+    # z = a + b
+    # kembalikan z
+    return <KEMBALIKAN SESUATU>
+```
+
+5. Create sebuah script bernama `even_odd.py` yang mengecek apakah sebuah bilangan merupakan bilangan ganjil atau genap
+```bash
+$ python3 even_odd.py
+```
+
+6. Create sebuah script `bool.py` yang menyimpan value `boolean`, kemudian print value tersebut
 ```bash
 $ python3 bool.py
+> True
+```
+
+HINT:
+```
+boolean adalah tipe data yang hanya punya 2 values, Benar & Salah, True & False
 ```
 
 6. Create sebuah script bernama `while.py` yang akan print `Hello!` selamanya jika tidak distop
@@ -72,6 +125,7 @@ $ Ctrl+C
 ```
 HINT:
 ```
+# cek nomor 5, karena kita pakai value boolean (True,False) di sini
 while <BLANK>:
     # DO SOMETHING HERE
 ```
