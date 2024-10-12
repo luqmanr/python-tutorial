@@ -22,7 +22,24 @@ for <VARIABLE> in range(<INSERT NUMBER HERE>):
     # DO SOMETHING HERE
 ```
 
-3. Create sebuah script bernama `hello.py` berisikan function bernama `hello_world()`, yang akan print `HELLO WORLD`
+3. Create sebuah script `sum.py` yang berisikan variable `a`, `b`, & `c` dimana `c = a + b`. Kemudian print value dari variable `a,b,c`
+```bash
+$ python3 sum.py
+> a = 5
+> b = 6
+> c = 11
+```
+HINT:
+```
+fungsi print() bisa menerima beberapa parameter sekaligus
+
+contoh:
+print("a =", a)  # print 2 parameter sekaligus
+print("b = ", b) # print 2 parameter sekaligus
+print("c = ", c) # print 2 parameter sekaligus
+```
+
+4. Create sebuah script bernama `hello.py` berisikan function bernama `hello_world()`, yang akan print `HELLO WORLD`
 ```bash
 $ python3 hello.py 
 > HELLO WORLD
@@ -33,12 +50,12 @@ def <BLANK>:
     # DO SOMETHING HERE
 ```
 
-4. Create sebuah script bernama `bool.py` yang mengecek apakah sebuah bilangan merupakan bilangan ganjil atau genap
+5. Create sebuah script bernama `bool.py` yang mengecek apakah sebuah bilangan merupakan bilangan ganjil atau genap
 ```bash
 $ python3 bool.py
 ```
 
-5. Create sebuah script bernama `while.py` yang akan print `Hello!` selamanya jika tidak distop
+6. Create sebuah script bernama `while.py` yang akan print `Hello!` selamanya jika tidak distop
 ```bash
 $ python3 while.py
 > Hello!
