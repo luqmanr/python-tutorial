@@ -1,5 +1,9 @@
-x = 5
-if (x % 2) == 0:
-    print("genap")
+x = 6
+mod = x % 2
+is_even = mod == 0
+print(is_even)
+
+if mod == 0:
+    print(True)
 else:
-    print("ganjil")
+    print(False)

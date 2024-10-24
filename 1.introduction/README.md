@@ -107,7 +107,7 @@ else:
     print("x bukan 5 bukan 1")
 ```
 
-Di contoh di atas, ada juga yang kita sebut `comparison operator` (di contoh di atas operator `==` -> cek sama dengan)
+Di contoh di atas, ada juga yang kita sebut `comparison operator` (di contoh di atas operator `==` -> cek sama dengan. Bedakan dengan `=` -> ini assignment operator)
 
 | Operator | Name                     | Example |
 | -------- | ------------------------ | ------- |
@@ -151,7 +151,46 @@ $ Ctrl+C
 ```
 HINT:
 ```
-# cek nomor 5, karena kita pakai value boolean (True,False) di sini
+# cek bagian boolean, karena kita pakai value boolean (True,False) di sini
 while <BLANK>:
     # DO SOMETHING HERE
 ```
+
+Di python juga ada built-in function untuk menangkap input data dari terminal
+```
+x = input("masukkan x: ")
+print(x)
+y = input("masukkan y: ")
+print(y)
+z = x + y
+print(z)
+```
+
+10. Buat script `incrementwhile.py` yang akan print `hello` sebanyak `10x` menggunakan `while loop`
+HINT:
+```
+i = 0
+i += 1 # i akan bertambah 1. 
+
+eg. 
+i = 0
+i += 1
+# i = 1
+```
+
+11. Coba buat sebuah script yang menanyakan pertanyaan berikut. Kalau salah, tanya lagi
+```
+"Apakah beruang merupakan binatang: jawab: yes | no "
+
+kalau benar:
+print("benar!")
+kemudian exit
+
+kalau salah:
+print("salah, coba lagi")
+```
+
+HINT:
+1. gunakan `while loop`
+2. gunakan `input()`
+3. gunakan `conditional ==`

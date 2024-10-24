@@ -1,0 +1,6 @@
+x = input("masukkan x: ")
+print(x)
+y = input("masukkan y: ")
+print(y)
+z = int(x) + int(y)
+print(z)
