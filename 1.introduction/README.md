@@ -10,7 +10,7 @@ $ python3 hello_world.py
 
 2. Create sebuah python script bernama `loop.py` yang akan print `0 1 2 3 4 5`
 ```bash
-$ python3 1to5.py
+$ python3 loop.py
 > 0
 > 1
 > 2
@@ -41,30 +41,30 @@ print("b = ", b) # print 2 parameter sekaligus
 print("c = ", c) # print 2 parameter sekaligus
 ```
 
-4. Create sebuah script `loop2.py` berisikan sebuah loop 5 kali iterasi, yang akan menambahkan bilangan antara `a & b`, dimana `a` akan bertambah `1` di setiap iterasi loop
+4. Create sebuah script `loop2.py` berisikan sebuah loop 5 kali iterasi, dimana `a` akan bertambah `1` di setiap iterasi loop
 ```bash
 $ python3 loop2.py
-> eg. b = 4
-> c = 4
-> c = 5
-> c = 6
-> c = 7
-> ...
+> eg. a = 4
+> a = 5 # loop 1
+> a = 6 # loop 2
+> a = 7 # loop 3
+> a = 8 # loop 4
+> a = 9 # loop 5
 ```
 
-5. Create sebuah script `loop3.py`, yang berisikan sebuah 5xloop di dalam 5xloop, dimana di **LOOP PERTAMA** `a` akan bertambah `1`, di dalam **LOOP KEDUA** `b` akan bertambah `1`. Setiap iterasi loop akan menambahkan antara bilangan `a & b`
+5. Create sebuah script `loop3.py`, yang akan looping sebanyak 2 kali, dimana di dalam setiap loop, akan ada loop 2 kali lagis. Pada **LOOP PERTAMA** `a` akan bertambah `1`, di dalam **LOOP KEDUA** `b` akan bertambah `1`. Setiap iterasi loop paling dalam, akan menambahkan antara bilangan `a & b`
 ```bash
 $ python3 loop3.py
-> c = 0
-> c = 1
-> c = 2
-> c = 3
-> c = 4
-> c = 1
-> c = 2
-> c = 3
-> c = 4
-> c = 5
+> 0
+> 1
+> 2
+> 3
+> 4
+> 1
+> 2
+> 3
+> 4
+> 5
 > ...
 > c = 8
 ```
@@ -88,7 +88,7 @@ $ python3 nambah.py
 ```
 HINT:
 ```
-def nambah(a, b):
+def tambah(a, b):
     # z = a + b
     # kembalikan z
     return <KEMBALIKAN SESUATU>
@@ -118,9 +118,28 @@ Di contoh di atas, ada juga yang kita sebut `comparison operator` (di contoh di 
 | >=       | Greater than or equal to | x >= y  |	
 | <=       | Less than or equal to    | x <= y  |
 
+Selain itu juga ada operasi matematik di python
+| Operator | Name                     | Example |
+| -------- | ------------------------ | ------- |
+| +       | tambah 	                  | 5 + 3 = 8  | 	
+| -      | kurang             | 5 - 3 = 2  |
+| / | bagi | 5 / 2 = 2.5 |
+| % | modulus | 5 % 2 = 1|
+| * | kali | 2 * 3 = 6 |
+| ** | pangkat | 2**2 = 4 |
+
 8. Create sebuah script bernama `even_odd.py` yang mengecek apakah sebuah bilangan merupakan bilangan ganjil atau genap
 ```bash
 $ python3 even_odd.py
+def even_odd(a):
+    if ...:
+        print("ganjil")
+    else:
+        print("genap")
+> a = 5
+> ganjil
+> a = 4
+> genap
 ```
 
 6. Create sebuah script `bool.py` yang menyimpan value `boolean`, kemudian print value tersebut
@@ -156,14 +175,45 @@ while <BLANK>:
     # DO SOMETHING HERE
 ```
 
-Di python juga ada built-in function untuk menangkap input data dari terminal
+JAWABAN:
 ```
-x = input("masukkan x: ")
+while True:
+    print("HELLO!")
+```
+
+sekarang buat jika setiap iterasi while, ada variable `a` yang akan bertambah `1` setiap iterasi,
+bagaimana cara cek agar angka `a` tidak melebihi `10`?
+```python
+def cek_sampai_sepuluh(a):
+    while ...:
+        print(a)
+    print("beres")
+
+a = 1
+cek_sampai_sepuluh(a)
+
+> 1
+> 2
+> 3
+> ...
+> 10
+> beres
+```
+
+Di python juga ada built-in function `input()` untuk menangkap input data dari terminal.
+
+Coba buat sebuah script `input.py`, di mana user akan input x & y
+```python
+x: int = float(input("masukkan x: "))
 print(x)
-y = input("masukkan y: ")
+y: int = float(input("masukkan y: "))
 print(y)
-z = x + y
+z: int = x + y
 print(z)
+
+> masukkan x: 5
+> masukkan y: 10
+> 15
 ```
 
 10. Buat script `incrementwhile.py` yang akan print `hello` sebanyak `10x` menggunakan `while loop`
